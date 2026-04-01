@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meey CRM — Đăng ký tư vấn</title>
+    <link rel="icon" href="meey-logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <img src="meey-logo.png" alt="Meey CRM" class="logo-img">
+        </a>
+        <div class="header-text">
+            <span class="header-title">Đăng ký tư vấn</span>
+            <span class="header-sub">Meey CRM — Nền tảng quản trị BĐS #1</span>
+        </div>
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="main">
+    <div class="container">
+        <div class="form-layout">
+            <!-- LEFT: Info -->
+            <div class="info-panel">
+                <h1 class="info-title">Trải nghiệm <span class="highlight">Meey CRM</span> miễn phí</h1>
+                <p class="info-desc">Nền tảng quản trị chuyên biệt cho ngành Bất động sản — được 48.000+ khách hàng tin dùng.</p>
+
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🚀</div>
+                        <div>
+                            <strong>Tư vấn 1:1 miễn phí</strong>
+                            <span>Chuyên gia tư vấn riêng cho mô hình của bạn</span>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📊</div>
+                        <div>
+                            <strong>Demo trực tiếp</strong>
+                            <span>Xem ngay cách Meey CRM vận hành thực tế</span>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎁</div>
+                        <div>
+                            <strong>Dùng thử 14 ngày</strong>
+                            <span>Trải nghiệm đầy đủ tính năng, không giới hạn</span>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🔒</div>
+                        <div>
+                            <strong>Bảo mật tuyệt đối</strong>
+                            <span>Thông tin được mã hóa và bảo vệ đa lớp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-stats">
+                    <div class="stat">
+                        <div class="stat-value">48K+</div>
+                        <div class="stat-label">Khách hàng</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-value">#1</div>
+                        <div class="stat-label">App Store</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <div class="stat-value">85K+</div>
+                        <div class="stat-label">Lượt tải</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Form -->
+            <div class="form-panel">
+                <div class="form-card">
+                    <h2 class="form-title">Đăng ký tư vấn miễn phí</h2>
+                    <p class="form-subtitle">Điền thông tin để nhận tư vấn từ chuyên gia</p>
+
+                    <form id="leadForm" class="lead-form" novalidate>
+                        <div class="form-group">
+                            <label class="form-label">Họ và tên <span class="req">*</span></label>
+                            <input type="text" name="fullName" class="form-input" placeholder="Nhập họ và tên" required>
+                            <span class="form-error" data-field="fullName"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Email <span class="req">*</span></label>
+                                <input type="email" name="email" class="form-input" placeholder="email@company.com" required>
+                                <span class="form-error" data-field="email"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Số điện thoại <span class="req">*</span></label>
+                                <input type="tel" name="phone" class="form-input" placeholder="0xxx xxx xxx" required>
+                                <span class="form-error" data-field="phone"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Vị trí công việc <span class="req">*</span></label>
+                                <select name="jobTitle" class="form-select" required>
+                                    <option value="" disabled selected>Lựa chọn vị trí</option>
+                                    <option value="Chủ sàn / Giám đốc">Chủ sàn / Giám đốc</option>
+                                    <option value="Trưởng phòng kinh doanh">Trưởng phòng kinh doanh</option>
+                                    <option value="Môi giới cá nhân">Môi giới cá nhân</option>
+                                    <option value="Quản lý vận hành">Quản lý vận hành</option>
+                                    <option value="other">Khác (tự điền)</option>
+                                </select>
+                                <input type="text" name="jobTitleOther" class="form-input job-other-input" placeholder="Nhập vị trí của bạn" style="display:none;">
+                                <span class="form-error" data-field="jobTitle"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Tên công ty</label>
+                                <input type="text" name="company" class="form-input" placeholder="Nhập tên công ty">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Tỉnh/Thành phố <span class="req">*</span></label>
+                                <select name="city" class="form-select" required>
+                                    <option value="" disabled selected>Lựa chọn khu vực</option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                    <option value="Hải Phòng">Hải Phòng</option>
+                                    <option value="Cần Thơ">Cần Thơ</option>
+                                    <option value="Khác">Khác</option>
+                                </select>
+                                <span class="form-error" data-field="city"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Quy mô nhân sự <span class="req">*</span></label>
+                                <select name="teamSize" class="form-select" required>
+                                    <option value="" disabled selected>Lựa chọn quy mô</option>
+                                    <option value="1-5">1 – 5 người</option>
+                                    <option value="6-20">6 – 20 người</option>
+                                    <option value="21-50">21 – 50 người</option>
+                                    <option value="51-100">51 – 100 người</option>
+                                    <option value="100+">Trên 100 người</option>
+                                </select>
+                                <span class="form-error" data-field="teamSize"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Gói quan tâm</label>
+                            <select name="plan" class="form-select">
+                                <option value="" disabled selected>Lựa chọn gói</option>
+                                <option value="Trải nghiệm">Trải nghiệm (Miễn phí)</option>
+                                <option value="Cơ bản">Cơ bản — 500,000đ/tháng</option>
+                                <option value="Nâng cao">Nâng cao — 1,500,000đ/tháng</option>
+                                <option value="VIP">VIP — 2,000,000đ/tháng</option>
+                                <option value="Enterprise">Enterprise — Liên hệ</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Ghi chú</label>
+                            <textarea name="note" class="form-input form-textarea" placeholder="Nhu cầu cụ thể hoặc câu hỏi của bạn..." rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span class="btn-text">Đăng ký tư vấn</span>
+                            <span class="btn-loading" style="display:none;">
+                                <span class="spinner"></span> Đang gửi...
+                            </span>
+                        </button>
+
+                        <p class="form-disclaimer">
+                            Bằng cách nhấn "Đăng ký tư vấn", tôi xác nhận đã đọc và đồng ý với
+                            <a href="#" target="_blank">Chính sách quyền riêng tư</a> của Meey CRM.
+                        </p>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message" style="display:none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Đăng ký thành công!</h3>
+                        <p>Cảm ơn bạn đã quan tâm đến Meey CRM.<br>Chuyên gia sẽ liên hệ bạn trong vòng 24 giờ.</p>
+                        <button class="btn-reset" onclick="resetForm()">Đăng ký thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <span>© 2026 Meey CRM — Thuộc hệ sinh thái MeeyGroup</span>
+        <div class="footer-links">
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách bảo mật</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
